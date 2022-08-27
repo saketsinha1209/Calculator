@@ -1,0 +1,339 @@
+.container{
+    background-image:radial-gradient(rgb(0, 83, 139),white);
+}
+.box {
+    border:2px solid rgb(116, 12, 12);
+    padding: 100px;
+    font-size: 20px;
+    width:40%;
+    align-self: center;
+    padding-right: 100px;
+    margin:0 auto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   background-image:radial-gradient(white,grey);
+}
+h4{
+    display: flex;
+    text-align: center;
+}
+.Navi{
+    width: 100%;
+    height: 100%;
+}
+#Home
+{
+    border:none;
+    background-color:transparent;
+    position:absolute;
+    right:15%;
+    top: 25px;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+#Contact{
+    border:none;
+    background-color:transparent;
+    position:absolute;
+    right:10%;
+    top: 25px;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+#About{
+    border:none;
+    background-color:transparent;
+    position:absolute;
+    right:4%;
+    top: 25px;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+#About:hover{
+font: size 30px;
+color:antiquewhite;
+}
+#Contact:hover{
+    font: size 30px;
+    color:antiquewhite
+}
+#Home:hover{
+    font: size 30px;
+color:antiquewhite;
+}
+.Header{
+    
+    background-color: darkblue;
+    grid-area: Header;
+    height: 60px;
+    text-align: left;
+   padding-left: 13px;
+   text-align: center;
+   color: white;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   border-radius: 15px;
+padding-top: 5px;
+}
+#Icon{
+     width:40px; height:40px;
+     top: 5px;
+   position: absolute;
+   left:41%;
+   top:25px;
+   border-radius:20px;
+}
+.Header:hover{
+    background-color:black;
+    color:darkblue;
+}
+h1.Header{
+    top: 25px;
+}
+hr{
+    width: 90%;
+    align-items: center;
+    color: darkblue;
+}
+
+.contact{
+    text-align:center;
+    width:100%;
+    height:100%;
+
+
+ }  
+ @keyframes example {
+    0% { background-image: linear-gradient(cyan,rgb(0, 255, 157));}
+    25%{ background-image: linear-gradient(rgb(255, 0, 0),rgb(187, 255, 0));}
+    50% { background-image: linear-gradient(orange,rgb(255,134,189));}
+    75% { background-image: linear-gradient(darkblue,white);}
+    100%{ background-image: linear-gradient(cyan,rgb(0, 255, 157));}
+}
+ .btn{
+     border-radius: 20px;
+     border: none;
+     width: 250px;
+     height: 50px;
+     color: white;
+     background-image: linear-gradient(cyan,rgb(0, 255, 157));
+     border-style: solid;
+     font-size: 20px;
+     animation-name: example;
+     animation-duration:8s;
+     animation-iteration-count: infinite;
+     
+ }
+
+
+.Content{
+
+    margin:4px;
+    background-image: linear-gradient(white,rgb(223, 219, 219));
+    grid-area: Content;
+    font-family:serif;
+    /* text-align: center; */
+
+    margin:4px;
+    margin-right: 4px;
+}
+.Footer
+{
+
+background-color:rgba(0, 0, 0, 0.685);
+grid-area: Footer;
+height: 200px;
+width: 100%;
+color: white;
+text-align: center;
+border-radius:20px;
+}
+#calculate{
+ background-color: rgb(116, 12, 12);
+ color: white;
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ width:30%;
+border-radius: 10px;
+border: none;
+height: 40px;
+align-items: center;
+
+}
+#calculate:hover{
+    background-color:black;
+    
+}
+#principal{
+    color:rgb(139, 0, 7);
+    font-family:Franklin Gothic;
+    width:30%;
+    height: 30px;
+    margin-top:12px;
+}
+#rate{
+    color:rgb(139, 0, 7);
+    font-family:Franklin Gothic;
+    width:30%;
+    height: 30px;
+    margin-top:12px;
+    margin-right: 20px;
+}
+#time{
+    color:rgb(139, 0, 7);
+    font-family:Franklin Gothic;
+    width:30%;
+    height: 30px;
+    margin-top:12px;
+  
+}
+h4{
+    color:darkblue;
+    text-align: center;
+
+
+}
+h2{
+    color:darkblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#interval{
+    color:darkblue;
+    font-family:Franklin Gothic;
+    width:30%;
+    height: 30px;
+    margin-top:12px;
+}
+#compounding{
+    color:darkblue;
+    font-family:Franklin Gothic;
+    width:30%;
+    height: 30px;
+    margin-top:12px;
+    text-align:center;
+   
+}
+#message{
+    text-indent: 50%;
+    padding: auto;
+}
+label{
+color:rgb(116, 12, 12);
+}
+#interval{
+    color:rgb(139, 0, 7);
+    font-family:Franklin Gothic;
+    width:30%;
+    height: 30px;
+    margin-top:12px;
+    margin-right: 20px;
+}
+select{
+    color:rgb(139, 0, 7);
+    font-family:Franklin Gothic;
+    width:30%;
+    height: 30px;
+    margin-top:12px;
+    margin-right: 20px;
+}
+.about{
+    height:400px;
+}
+@media (max-width:450px)and (min-width:320px)
+{
+    .Header:hover{
+        background-color:black;
+        color:darkblue;
+    }
+    #Home{
+        top: 80px;
+        left:0%;
+
+    }
+    #Contact{
+        top: 80px;
+        left:30%
+    }
+    #About{
+        top: 80px;
+        left:70%;
+    }
+    .Header{
+        height: 100px;
+        text-align:left;
+    }
+    #calculate{
+        width:80%;
+        
+    }
+    #principal{
+        width:80%;
+    }
+    #rate{
+        width:80%;
+    }
+    #time{
+        width:80%;
+    }
+    #About:hover{
+        font: size 30px;
+        color:antiquewhite;
+        }
+        #Contact:hover{
+            font: size 30px;
+            color:antiquewhite
+        }
+        #Home:hover{
+            font: size 30px;
+        color:antiquewhite;
+        }
+}
+@media(max-width:1050px) and (min-width:450px)
+{
+    .Header:hover{
+        background-color:black;
+        color:darkblue;
+    }
+    #Home{
+        top: 80px;
+        left:20%;
+
+    }
+    #Contact{
+        top: 80px;
+        left:50%
+    }
+    #About{
+        top: 80px;
+        left:80%;
+    }
+    .Header{
+        height: 100px;
+        text-align:center;
+    }
+    #calculate{
+        width:80%;
+        
+    }
+    #principal{
+        width:80%;
+    }
+    #rate{
+        width:80%;
+    }
+    #time{
+        width:80%;
+    }
+    #About:hover{
+        font: size 30px;
+        color:antiquewhite;
+        }
+        #Contact:hover{
+            font: size 30px;
+            color:antiquewhite
+        }
+        #Home:hover{
+            font: size 30px;
+        color:antiquewhite;
+        }
+}
