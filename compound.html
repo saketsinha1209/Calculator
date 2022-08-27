@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+
+   
+</head>
+<link rel="stylesheet" href="css.css">
+
+<body>
+    <div class="container">
+        <div class="Header">
+            <h1>CALCULATOR</h1>
+            <a href="index.html"><button type="button" id="Home">Home</button></a>
+            <a href="contact.html"><button type="button" id="Contact">Contact</button></a>
+            <a href="about.html"><button type="button" id="About">About Us</button></a>
+        </div>
+
+
+        <div class="Content">
+
+            <h2>COMPOUND INTEREST</h2>
+            <div class="box">
+                <form>
+                    <label for="principal">PRINCIPAL: </label><br><input type="number" id="principal"><br><br>
+                    <label for="rate">RATE:    </label><br><input type="number" id="rate"><br><br>
+                    <label for="time">TIME:   </label><br><input type="number" id="time"><br><br>
+                    <label for="Compound Interval">Compound Interval: </label><br>
+                     <select name="interval" id="Interval">
+                         <option id="yo" value="Yearly">Yearly</option>
+                        <option  id="hal" value="Half Yearly">Half Yearly</option>
+                        <option id="quar" value="Quarterly">Quarterly</option>
+                        <option id="mon" value="Monthly">Monthly</option>
+                        <option id="da" value="Daily">Daily</option>
+                    </select>
+                     
+                   <br><br><br>
+                     <button onclick="compound()" type="button" id="calculate">CALCULATE</button>
+                    </form>
+                     <div id="ci"></div>
+                     <div id="amt"></div>
+                     
+            </div>
+          
+            </div>
+            <script type="text/javascript">
+                function compound() {
+                    var p, r, t, ci, amt,n,select1,select2,select3,select4,select5,value;
+                    p = document.getElementById("principal").value;
+                    r = document.getElementById("rate").value;
+                    t = document.getElementById("time").value;
+                    select1= document.getElementById("yo").value;
+                    select2= document.getElementById("hal").value;
+                    select3= document.getElementById("quar").value;
+                    select4= document.getElementById("mon").value;
+                    select5= document.getElementById("da").value;
+                    if(select1=="Yearly")
+                    {
+                        n=1;
+                    }
+                    if(select2=="Half Yearly")
+                    {
+                        n=2;
+                    }
+                    if(select3=="Quarterly")
+                    {
+                        n=4;
+                    }
+                    if(select4=="Monthly")
+                   {
+                       n=12;
+                   }
+                   else if(select5=="Daily")
+                   {
+                   n==365;
+                   }
+                    amt = parseInt(p * Math.pow((1 + r/(n* 100)), n*t));
+                    ci = amt - p;
+                    document.getElementById("ci").innerHTML = "Compount Interest is" + ci;
+                    document.getElementById("amt").innerHTML = "Amount is" + amt;
+
+                }
+            </script>
+</body>
